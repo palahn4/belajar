@@ -15,7 +15,7 @@
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-striped table-bordered" id="myTable">
-                        <thead>
+                        <thead class="text-center">
                             <tr>
                                 <th width="5%">#</th>
                                 <th>NIM</th>
@@ -25,9 +25,9 @@
                                 <th width="20%">Aksi</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="text-center">
                             @foreach ($mahasiswa as $value)
-                                <tr class="text-center">
+                                <tr>
                                     <td>{{ $i++ }}</td>
                                     <td>{{ $value->nim }}</td>
                                     <td>{{ $value->name }}</td>

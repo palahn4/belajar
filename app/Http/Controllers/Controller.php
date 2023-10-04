@@ -18,7 +18,7 @@ class Controller extends BaseController
 
     public function genNim() {
         do {
-            $newNim  = date("ym") . rand(0000,9999);
+            $newNim  = date("ym") . substr(str_shuffle("0123456789"), 0, 4);
             $dataMhs = $this->mahasiswa->getMahasiswabyNim($newNim);
         } while (isset($dataMhs));
 

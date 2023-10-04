@@ -15,8 +15,8 @@ use App\Http\Controllers\MahasiswaController;
 */
 
 Route::get('/', function () {
-    // return view('welcome');
-    return redirect()->to(url('/mahasiswa'));
+    return view('welcome');
+    // return redirect()->to(url('/mahasiswa'));
 });
 
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
